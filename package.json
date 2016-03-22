@@ -1,0 +1,25 @@
+{
+  "name": "shared-expenses-client",
+  "version": "1.0.0",
+  "description": "Web Client for Shared Expenses",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirankomirishetty/shared-expenses-client.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Kiran Komirishetty",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kirankomirishetty/shared-expenses-client/issues"
+  },
+  "homepage": "https://github.com/kirankomirishetty/shared-expenses-client#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
