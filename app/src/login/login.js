@@ -5,7 +5,7 @@ angular.module('login', [
 ], 
 ['$routeProvider', function($routeProvider) {
   $routeProvider.
-	when("/login", {templateUrl: "/js/login/html/login.html", controller: "LoginController"}).
+	when("/login", {templateUrl: "/src/login/html/login.html", controller: "LoginController"}).
 	// when("/welcome", {templateUrl: "home/welcome.html", controller: "WelcomeController"}).
 	otherwise({redirectTo: '/login'});
 }]);

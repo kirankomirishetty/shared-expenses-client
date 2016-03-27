@@ -4,8 +4,26 @@
 	<title>Login to Shared Expenses</title>
 </head>
 <body ng-app>
-	<label>User Name :</label><input type="text" name="userName" ng-model="userName" />
-	<label>Password  :</label><input type="password" name="password"  ng-model="password"/>
-	<input type="button" name="Login" value="Login" ng-click="doLogin();"/> 
+
+	<div class="container container-table">
+	<div class="row vertical-center-row">
+	<div class="text-center col-md-4 col-md-offset-4">
+	      <form class="form-signin">
+	        <h2 class="form-signin-heading">Please sign in</h2>
+	        <label for="inputEmail" class="sr-only">Email address</label>
+	        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus ng-model="userName">
+	        <label for="inputPassword" class="sr-only">Password</label>
+	        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="password">
+	        <div class="checkbox">
+	          <label>
+	            <input type="checkbox" value="remember-me"> Remember me
+	          </label>
+	        </div>
+	        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="doLogin();">Sign in</button>
+	      </form>
+	    </div>
+	    </div>
+
+    </div> <!-- /container -->
 </body>
 </html>
