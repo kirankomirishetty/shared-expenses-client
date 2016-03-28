@@ -2,6 +2,8 @@ angular.module('SharedExpensesApp', [
   // 'SharedExpensesApp.services',
   'login',
   'landing',
+  'dashboard',
+  'directives',
   // 'controllers',
   'ngRoute'
 ])

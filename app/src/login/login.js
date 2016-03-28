@@ -1,6 +1,7 @@
 angular.module('login', [
   // 'SharedExpensesApp.services',
   'loginController',
+  'loginService',
   'ngRoute'
 ], 
 ['$routeProvider', function($routeProvider) {
