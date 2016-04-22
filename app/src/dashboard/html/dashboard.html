@@ -19,7 +19,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="alert alert-success">
+                    <div class="alert alert-info">
                     	  Consolidated report of all the bills created by you are shared with you. This provides an highlevel overview of how much you owe or owed, and recent transactions and alerts from your friends.
 
                     </div>
@@ -27,8 +27,8 @@
 
             </div>
             <div class="row">
-			  <div class="col-md-4 col-md-4">
-			    <div class="thumbnail">
+			  <div class="col-sm-4 col-md-3">
+			    <div class="thumbnail tile tile-medium tile-blue">
 			      <h5>Amount I Owe</h5>
 			      <span class="glyphicon glyphicon-usd" style="font-size:2.0em;" aria-hidden="true"><font size="14px" color="#577492">50</font></span>
 			     <!--  <div class="caption"> -->
@@ -48,13 +48,13 @@
 
                          
 
-                 <div class="col-md-4 col-md-4">
+                 <div class="col-sm-4 col-md-3">
 			    <div class="thumbnail">
 			      <h5>Amount Owed to me</h5>
 			      <span class="glyphicon glyphicon-usd" style="font-size:2.0em;" aria-hidden="true"><font size="14px" color="#577492">100</font></span>
 			      <!-- <div class="caption"> -->
 			        <div class="progress progress-striped active">
-					  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
 					  </div>
 					  </div>
 			        <p>
@@ -66,10 +66,30 @@
 			   <!--  </div> -->
 			  </div>
 			</div>
-                 <div class="col-md-4 col-md-4">
+                 <div class="col-sm-4  col-md-3">
 			    <div class="thumbnail">
 			      <h5>Summary</h5>
-			      <span class="glyphicon glyphicon-usd" style="font-size:2.0em;" aria-hidden="true"><font size="14px" color="#577492">-50</font></span>
+			      <span class="glyphicon glyphicon-usd" style="font-size:2.0em;" aria-hidden="true"><font size="14px" color="#577492">50</font></span>
+			      <!-- <div class="caption"> -->
+			        
+			        <div class="progress progress-striped active">
+			        <!-- Amount in this column is > 0 then use class progress-bar-success else use 
+			             class progress-bar-danger -->
+					  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					  </div>
+			      </div>
+			        <p>
+				        <a href="#" class="btn btn-primary" role="button">View Details</a> 
+				        <a href="#" class="btn btn-default" role="button">Button</a>
+			        </p>
+			         
+			    <!-- </div> -->
+			  </div>
+			</div>
+              <div class="col-sm-4  col-md-3">
+			    <div class="thumbnail">
+			      <h5>Pending Invitations</h5>
+			      <span class="glyphicon glyphicon-check" style="font-size:2.0em;" aria-hidden="true"><font size="14px" color="#577492">10</font></span>
 			      <!-- <div class="caption"> -->
 			        
 			        <div class="progress progress-striped active">
@@ -77,14 +97,13 @@
 					  </div>
 			      </div>
 			        <p>
-				        <a href="#" class="btn btn-primary" role="button">Button</a> 
+				        <a href="#" class="btn btn-primary" role="button">View Details</a> 
 				        <a href="#" class="btn btn-default" role="button">Button</a>
 			        </p>
 			         
 			    <!-- </div> -->
 			  </div>
-			</div>
-                
+			</div>  
             </div>
            
             <div class="row">
@@ -223,10 +242,10 @@
                             </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="alert alert-danger">
+                    <!-- <div class="alert alert-danger">
                         This is a simple admin template that can be used for your small project or may be large projects. This is free for personal and commercial use.
                     </div>
-                    <hr />
+                    <hr />-->
                      <div class="Compose-Message">               
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -241,8 +260,8 @@
                         <label>Enter Message : </label>
                         <textarea rows="9" class="form-control"></textarea>
                         <hr />
-                        <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-envelope"></span> Send Message </a>&nbsp;
-                      <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-tags"></span>  Save To Drafts </a>
+                        <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-envelope"></span> Send Message </a>&nbsp;
+                      <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-remove-circle"></span>  Reset </a>
                     </div>
                     <div class="panel-footer text-muted">
                         <strong>Note : </strong>Please note that we track all messages so don't send any spams.

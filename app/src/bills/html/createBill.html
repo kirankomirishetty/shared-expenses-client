@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login to Shared Expenses</title>
+</head>
+<body ng-app>
+	<top-navigation></top-navigation>
+    <!-- MENU SECTION END #31708F-->
+    <div class="content-wrapper">
+        <div class="container">
+        	<div class="row">
+        		<div class="col-lg-12">
+                    <h4 class="page-head-line">Create a bill</h4>
+                </div>
+            </div>
+            <div class="row">
+        		<div class="col-sm-2 col-md-2">
+        			<div class="panel panel-success">
+        			<div class="panel-body">
+                        <a href="#" class="btn btn-social btn-facebook">
+                            <i class="fa fa-facebook"></i>&nbsp; Facebook</a>
+                        <br />
+                        <a href="#" class="btn btn-social btn-google">
+                            <i class="fa fa-google-plus"></i>&nbsp; Google</a>
+						<br />
+                        <a href="#" class="btn btn-social btn-twitter">
+                            <i class="fa fa-twitter"></i>&nbsp; Twitter </a>
+                        <br />
+                        <a href="#" class="btn btn-social btn-linkedin">
+                            <i class="fa fa-linkedin"></i>&nbsp; Linkedin </a>
+                     </div>
+                    </div>
+            	</div>            
+                <div class="col-lg-8">
+                    <div class="alert alert-info">
+                    	  Please provide the below information to create the bill.
+                    </div>
+                    <div class="alert alert-danger">
+                    	  * Mandatory fields.
+                    </div>
+                </div>
+        		<div class="col-sm-2">
+            	</div>
+            </div>
+            <div class="row">
+            	<div class="col-sm-2">
+            	</div>
+                <div class="col-lg-8">
+                <form class="form-create-bill" data-toggle="validator">
+                  <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <strong>Create Bill</strong> 
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+	                        <label for="billPurpose" class="control-label">Purpose of bill : </label>
+	                        <input type="text" pattern="^[_A-z0-9]{1,}$" id="billPurpose" class="form-control" required/>
+                        </div>
+                        <label for="billDesc" class="control-label">Bill Description : </label>
+                        <textarea rows="4" id="billDesc" class="form-control"></textarea>
+                        <label for="billContactGrp" class="control-label">Select contact groups : </label>
+                        <select class="form-control" ng-model="billContactGrp" id="billContactGrp" required>
+                          <option>Select a Contact Group</option>
+						  <optgroup label="Contact Groups">
+						    <option>T-Mobile Users Group</option>
+						    <option>Community Friends Group</option>
+						    <option>Professional Group</option>
+						  </optgroup>
+						  <optgroup label="Contact List">
+						    <option>All Contacts</option>
+						    <option>Recent Contacts</option>
+						    <option>New Contact</option>
+						  </optgroup>
+						</select>
+						<label for="newContact" class="control-label">New contacts : </label>
+						<input type="email" id="newContact"  ng-show="billContactGrp == 'New Contact'" class="form-control"/>
+						<input type="button" value="Add" id="addContact"  ng-show="billContactGrp == 'New Contact'" class="form-control"/>
+						<label for="billPartners" ng-show="billContactGrp == 'New Contact'" class="control-label">Select contacts : </label>
+						<select class="form-control" id="billPartners" multiple required>
+						  <option>All</option>
+						  <option>Kiran@gmail.com</option>
+						  <option>naveen@gmail.com</option>
+						</select>
+						<label for="sendNtfcnYes" class="control-label">Send Notification :</label>
+
+						<label class="form-control">
+						  <input type="radio" id="sendNtfcnYes" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+						</label>
+						<label for="sendNtfcnNo" class="control-label" class="form-control">
+						  <input type="radio" id="sendNtfcnNo" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked="checked"> No
+						</label>
+                        <hr />
+                        <a href="#" id="createBillLink" class="btn btn-success" ng-click="createBill();">
+                        <span class="glyphicon glyphicon-envelope"></span> Create Bill </a>&nbsp;
+                      <a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-remove-circle"></span>  Reset Form </a>
+                    </div>
+                    <div class="panel-footer text-muted">
+                        <strong>Note : </strong> Please note that you can still modify the bill details after creating by navigating to Bills > View Bills and then select the bill and hit Modify
+                    </div>
+                </div>
+                </form>
+                </div>
+        		<div class="col-sm-2">
+            	</div>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

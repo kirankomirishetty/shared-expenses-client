@@ -4,6 +4,8 @@ angular.module('SharedExpensesApp', [
   'landing',
   'dashboard',
   'directives',
+  'bills',
+  'xeditable',
   // 'controllers',
   'ngRoute'
 ])
